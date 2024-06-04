@@ -7,6 +7,12 @@ const PostForm = ({ post, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit({ id: post ? post.id : Date.now(), title, content });
+    resetForm();
+  };
+
+  const resetForm = () => {
+    setTitle("");
+    setContent("");
   };
 
   useEffect(() => {
