@@ -4,7 +4,7 @@ import PostItem from "./PostItem";
 const PostList = ({ posts, onEdit, onDelete }) => {
   // Check if posts array is empty
   if (!posts || posts.length === 0) {
-    return <p>No posts available.</p>;
+    return <p style={{ textAlign: "center", fontSize: "18px", color: "#333" }} >No posts available.</p>;
   }
 
   return (
